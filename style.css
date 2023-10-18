@@ -1,0 +1,103 @@
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.property {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.property-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.property-details {
+    display: flex;
+    align-items: center;
+}
+
+.property-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.property-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.property-info {
+    flex: 2;
+}
+
+.property-location, .property-price, .property-description {
+    margin-bottom: 10px;
+}
+
+.property-buttons {
+    display: inline;
+    margin-top: 10px;
+}
+
+.edit-button, .delete-button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #DC3545;
+}
+
+.property-sno {
+    font-size: 18px;
+    font-weight: bold;
+    color: #de0c0c;
+    /* margin-bottom: 5px; */
+    margin-top: 8px;
+}
+
+.property-item-container {
+    margin-bottom: 20px; /* Adjust the margin to control the spacing between pairs */
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.selected-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-list li:hover {
+    background-color: #f2f2f2;
+}
